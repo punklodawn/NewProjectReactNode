@@ -6,7 +6,7 @@ import {useState} from 'react'
 
 
 export const Rating = ({rating, numReviews})=>{
-    const {iconSize, serIconSize} = useState('14px')
+    const {iconSize, setIconSize} = useState('14px')
     return(
         <Flex>
             <HStack spacing='2px'>

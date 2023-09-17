@@ -6,7 +6,6 @@ const productService = {};
 productService.find = async () => {
 	try {
 		const getAllProducts = await productDao.findAllProducts();
-		console.log(getAllProducts);
 		if (!getAllProducts || !getAllProducts.length) {
 			throw new Error('Not Found products');
 		}
